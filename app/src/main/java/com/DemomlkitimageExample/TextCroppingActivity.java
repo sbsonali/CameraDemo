@@ -245,6 +245,8 @@ public class TextCroppingActivity extends AppCompatActivity implements View.OnCl
                 case ExifInterface.ORIENTATION_NORMAL:
                     rotatedBitmap = bm;
                     break;
+                default:
+                    rotatedBitmap = bm;
             }
             image_view.setImageBitmap(rotatedBitmap);
             mSelectedImage = rotatedBitmap;
